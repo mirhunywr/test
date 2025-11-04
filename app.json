@@ -1,0 +1,58 @@
+{
+  "name": "QADEER-AI",
+  "description": "Javascript WhatsApp bot made by Qadeer Brshvi",
+  "logo": "https://files.catbox.moe/hvw9w3.jpg",
+  "keywords": ["QADEER-AI","QADEER-MD"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Must Start with 'QADEER-AI~'",
+      "required": true,
+      "value": ""
+    },
+      "BOT_NAME": {
+        "description": "write here your bot name.",
+        "required": true,
+        "value": "ϙᴀᴅᴇᴇʀ-ᴀɪ"      
+    },  
+    "MODE": {
+      "description": "Set private/public/inbox/groups",
+      "required": false,
+      "value": "public"
+     },
+   
+    "PREFIX": {
+      "description": "Your Bot Prefix (default: .) You can put your own custom prefix",
+      "required": true,
+      "value": "."
+    },
+    
+    "OWNER_NAME": {
+      "description": "Put Owner Name Here",
+      "required": true,
+      "value": "ϙᴀᴅᴇᴇʀ ʙʀᴀʜᴠɪ"
+    },
+    "OWNER_NUMBER": {
+      "description": "Put only one Owner Number Here",
+      "required": true,
+      "value": "923300005253"
+    },
+    
+    "PRESENCE": {
+      "description": "Put online/typing/recording/unavailable",
+      "required": true,
+      "value": "online"
+    }
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
+  
